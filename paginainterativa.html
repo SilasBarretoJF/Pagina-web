@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Minha Segunda Página</title>
+    <style>
+      /* estilos CSS aqui */
+      #caixa {
+        width: 200px;
+        height: 200px;
+        border: 2px solid black;
+        text-align: center;
+        font-size: 24px;
+      }
+    </style>
+    <script>
+      // código JavaScript aqui
+      function clicou() {
+        document.getElementById("caixa").style.backgroundColor = "green";
+        document.getElementById("caixa").innerHTML = "CLICOU";
+      }
+
+      function passou() {
+        document.getElementById("caixa").style.backgroundColor = "blue";
+        document.getElementById("caixa").innerHTML = "PASSOU";
+      }
+
+      function saiu() {
+        document.getElementById("caixa").style.backgroundColor = "red";
+        document.getElementById("caixa").innerHTML = "SAIU";
+      }
+    </script>
+  </head>
+  <body>
+    <div id="caixa" onclick="clicou()" onmouseover="passou()" onmouseout="saiu()">
+      Clique aqui
+    </div>
+  </body>
+</html>
